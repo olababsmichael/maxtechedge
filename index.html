@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MaxTech Edge — Where Skills Meet Growth</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="wrap">
+      <a class="brand" href="#hero">
+        <div class="brand-mark" aria-hidden="true">M</div>
+        <div class="brand-text">
+          <div class="brand-title">MaxTech Edge</div>
+          <div class="brand-sub">Where Skills Meet Growth</div>
+        </div>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#highlights">Highlights</a>
+        <a class="btn-outline small" href="#register">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy animate">
+          <div class="kicker">New • Practical</div>
+          <h1>MaxTech Edge — Where Skills Meet Growth</h1>
+          <p class="lead">
+            Empowering individuals with future-ready digital and analytical skills. Join our beginner-friendly programs and gain the confidence to grow your career in the digital economy.
+          </p>
+          <div class="actions">
+            <a class="btn-primary" href="#register">Start Learning</a>
+            <a class="btn-outline" href="#programs">Explore Courses</a>
+          </div>
+        </div>
+
+        <aside class="cohort-card animate">
+          <div class="card-title">Next Cohort</div>
+          <div class="card-meta">Data Analysis Course • 4–8 weeks</div>
+          <div class="card-price">Fee: ₦15,000</div>
+          <a class="btn-primary full" href="#register">Register Now</a>
+          <div class="card-note">Lifetime access • Certificate on completion</div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- FOREWORD (LETTER STYLE) -->
+    <section id="foreword" class="foreword animate">
+      <div class="wrap">
+        <article class="foreword-card">
+          <h2>Foreword</h2>
+          <div class="letter">
+            <p>At <strong>MaxTech Edge</strong>, our mission is to make digital learning simple, accessible, and impactful. We’re at the start of a journey to empower learners with practical skills that open doors to opportunity.</p>
+            <p>This platform is for beginners, students, and professionals who want hands-on training and real confidence. Welcome — we’re excited to learn and grow with you.</p>
+            <p class="sig">— The MaxTech Edge Team</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT + MISSION/VISION -->
+    <section id="about" class="about animate">
+      <div class="wrap about-grid">
+        <div class="about-text">
+          <h2>About Our Organisation</h2>
+          <p>MaxTech Edge is a digital learning hub dedicated to equipping people with technology and data skills. We design practical, beginner-friendly courses to bridge the gap between learning and jobs.</p>
+          <p class="muted">We focus on accessible, practical learning that translates quickly to career outcomes.</p>
+        </div>
+
+        <div class="mv-cards">
+          <div class="mv-card">
+            <div class="mv-heading">Our Mission</div>
+            <p>To deliver accessible, flexible, and practical tech-based training programs that transform beginners into job-ready professionals.</p>
+          </div>
+
+          <div class="mv-card">
+            <div class="mv-heading">Our Vision</div>
+            <p>To be the trusted platform across Africa that drives career growth through practical digital skills.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section id="programs" class="section animate">
+      <div class="wrap">
+        <h2>Programs</h2>
+        <div class="card-grid">
+          <div class="service-card">
+            <h3>Data Analysis Course</h3>
+            <p class="muted">Tools: Excel, Power BI, SQL, Python • Duration: 4–8 weeks • Mode: Virtual</p>
+          </div>
+
+          <div class="service-card">
+            <h3>Short Workshops (Coming Soon)</h3>
+            <p class="muted">Hands-on sessions focused on real tools and projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section id="highlights" class="section animate">
+      <div class="wrap">
+        <h2>Organisation Highlights</h2>
+        <div class="highlight">
+          <h3>Bridging the Knowledge Gap</h3>
+          <p class="muted">We aim to close the gap between learning and opportunity by providing affordable, hands-on courses that help learners move from curiosity to confidence and from learning to earning.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTER -->
+    <section id="register" class="register animate">
+      <div class="wrap register-grid">
+        <div class="register-copy">
+          <h2>Get Started</h2>
+          <p class="muted">Ready to join? Fill the registration form or contact us directly.</p>
+        </div>
+
+        <div class="register-actions">
+          <a class="btn-primary full" href="#" aria-label="Register Link">Register (Google Form)</a>
+          <a class="btn-outline full" href="mailto:youremail@domain.com">Email Us</a>
+          <div class="muted small">Contact / WhatsApp: +234XXXXXXXXXX</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>© <strong>MaxTech Edge</strong> — Where Skills Meet Growth</div>
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#register">Register</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    // sticky header class toggles not needed — header is styled as sticky via CSS
+    // smooth scroll (native in CSS) fallback for older browsers:
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (!target) return;
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // simple reveal on scroll
+    const observers = document.querySelectorAll('.animate');
+    const obs = new IntersectionObserver((entries, o) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          o.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    observers.forEach(el => obs.observe(el));
+  </script>
+</body>
+</html>
